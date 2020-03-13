@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">InheritanceRPG4</string>
+    <string-array name="HeroClass">
+        <item>tank</item>
+        <item>mage</item>
+        <item>rogue</item>
+        <item>support</item>
+        <item>marksman</item>
+        <item>monster</item>
+    </string-array>
+
+
+    <string-array name="tanksubclass">
+        <item>knight</item>
+        <item>barbarian</item>
+    </string-array>
+
+    <string-array name="magesubclass">
+        <item>priest</item>
+        <item>necromancer</item>
+    </string-array>
+
+    <string-array name="roguesubclass">
+        <item>assassin</item>
+        <item>ninja</item>
+    </string-array>
+
+    <string-array name="marksmansubclass">
+        <item>archer</item>
+        <item>rifleman</item>
+    </string-array>
+
+    <string-array name="supportsubclass">
+        <item>enchanter</item>
+        <item>healer</item>
+    </string-array>
+
+    <string-array name="monster">
+    </string-array>
+</resources>
