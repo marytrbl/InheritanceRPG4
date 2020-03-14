@@ -1,4 +1,4 @@
-package sanoy.mcm.edu.ph.example.inheritancerpg4;
+package sanoy.mcm.edu.ph.example.inheritancerpg;
 
 import java.text.DecimalFormat;
 
@@ -18,14 +18,11 @@ public class Hero {
 
     DecimalFormat df = new DecimalFormat("0");
 
-    public Hero(String hero_class, String name, int id, int level, double strength, double agility, double intelligence) {
+    public Hero(String hero_class, String name, int id, int level) {
         heroClass = hero_class;
         heroName = name;
         heroID = id;
         heroLevel = level;
-        heroStrength = strength;
-        heroAgility = agility;
-        heroIntelligence = intelligence;
     }
 
     public String getHeroClass() {
@@ -80,29 +77,33 @@ public class Hero {
         return heroIntelligence;
     }
 
-    public double computeHealth() {
+    public double computeHP() {
         double heroHealth = 200 + (20*heroStrength);
         return heroHealth;
     }
 
-    public double computeMana() {
+    public double computeMP() {
         double heroMana = 75 + (12*heroIntelligence);
         return heroMana;
     }
 
-    public double computeMagicDamage() {
-        double heroMagicDamage = heroIntelligence*0.07;
-        return heroMagicDamage;
+    public double computeMagicDmg() {
+        double heroMagicAtk = heroIntelligence*0.07;
+        return heroMagicAtk;
     }
 
-    public double computePhysicalDamageMin() {
-        double heroPhysicalDamageMin = 16 + heroAgility;
-        return heroPhysicalDamageMin;
+    public double computePhysicalDmg() {
+        double heroPhysicalAtk = 16 + heroAgility;
+        return heroPhysicalAtk;
     }
 
-    public double computePhysicalDamageMax() {
-        double heroPhysicalDamageMax = 20 + heroAgility;
-        return heroPhysicalDamageMax;
+    public double computePhysicalDef() {
+        double heroPhysicalDef = 20 + heroStrength;
+        return heroPhysicalDef;
     }
 
+    public double computeMagicDef() {
+        double heroMagicDef = heroIntelligence*0.02;
+        return heroMagicDef;
+    }
 }

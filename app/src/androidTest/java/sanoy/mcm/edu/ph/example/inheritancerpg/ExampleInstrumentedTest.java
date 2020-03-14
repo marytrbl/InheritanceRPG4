@@ -1,4 +1,4 @@
-package sanoy.mcm.edu.ph.example.inheritancerpg4;
+package sanoy.mcm.edu.ph.example.inheritancerpg;
 
 import android.content.Context;
 

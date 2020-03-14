@@ -6,34 +6,41 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <Spinner
-        android:id="@+id/Heroclass"
-        android:layout_width="164dp"
-        android:layout_height="42dp"
-        android:layout_marginBottom="156dp"
-        android:entries="@array/HeroClass"
+
+    <TextView
+        android:id="@+id/welcometxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/future"
+        android:letterSpacing="0.05"
+        android:text="Welcome to Inheritance Rpg"
+        android:textSize="40sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Spinner
-        android:id="@+id/tanksubclass"
-        android:layout_width="164dp"
-        android:layout_height="42dp"
-        android:layout_marginTop="20dp"
-        android:entries="@array/tanksubclass"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Heroclass" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.102" />
+
+    <ImageView
+        android:id="@+id/priestimage"
+        android:layout_width="136dp"
+        android:layout_height="166dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/priest"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.465"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.537" />
 
     <Spinner
-        android:id="@+id/magesubclass"
+        android:id="@+id/supportsubclass"
         android:layout_width="164dp"
         android:layout_height="42dp"
-        android:layout_marginTop="20dp"
-        android:entries="@array/magesubclass"
+        android:layout_marginTop="4dp"
+        android:entries="@array/supportsubclass"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
@@ -43,8 +50,91 @@
         android:id="@+id/roguesubclass"
         android:layout_width="164dp"
         android:layout_height="42dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="4dp"
         android:entries="@array/roguesubclass"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Heroclass" />
+
+    <ImageView
+        android:id="@+id/knightimage"
+        android:layout_width="136dp"
+        android:layout_height="166dp"
+        android:src="@drawable/knight"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.465"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.541" />
+
+    <Spinner
+        android:id="@+id/tanksubclass"
+        android:layout_width="164dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="4dp"
+        android:entries="@array/tanksubclass"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Heroclass" />
+
+    <ImageView
+        android:id="@+id/ninjaimage"
+        android:layout_width="136dp"
+        android:layout_height="166dp"
+        android:src="@drawable/ninja"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.465"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.538" />
+
+    <ImageView
+        android:id="@+id/archerimage"
+        android:layout_width="136dp"
+        android:layout_height="166dp"
+        android:src="@drawable/archer"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.552"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.538" />
+
+    <ImageView
+        android:id="@+id/enchanterimage"
+        android:layout_width="136dp"
+        android:layout_height="166dp"
+        android:src="@drawable/enchanter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.538" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="52dp"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcometxt"
+        app:layout_constraintVertical_bias="0.953" />
+
+    <Spinner
+        android:id="@+id/magesubclass"
+        android:layout_width="164dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="12dp"
+        android:entries="@array/magesubclass"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
@@ -54,7 +144,7 @@
         android:id="@+id/marksmansubclass"
         android:layout_width="164dp"
         android:layout_height="42dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="4dp"
         android:entries="@array/marksmansubclass"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -62,65 +152,125 @@
         app:layout_constraintTop_toBottomOf="@+id/Heroclass" />
 
     <Spinner
-        android:id="@+id/supportsubclass"
+        android:id="@+id/Heroclass"
         android:layout_width="164dp"
         android:layout_height="42dp"
-        android:layout_marginTop="20dp"
-        android:entries="@array/supportsubclass"
+        android:entries="@array/HeroClass"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Heroclass" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.265" />
 
-    <ImageView
-        android:id="@+id/archerimage"
+    <Button
+        android:id="@+id/herobtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="268dp"
+        android:layout_marginTop="60dp"
+        android:text="Hero"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.45"
-        app:layout_constraintStart_toStartOf="parent" />
-
-
-    <ImageView
-        android:id="@+id/barbarianimage"
-        android:layout_width="223dp"
-        android:layout_height="227dp"
-        android:layout_marginBottom="252dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"/>
-
-
-    <ImageView
-        android:id="@+id/knightimage"
-        android:layout_width="207dp"
-        android:layout_height="239dp"
-        android:layout_marginTop="224dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.602"
+        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toBottomOf="@+id/welcometxt2"
+        app:layout_constraintVertical_bias="0.125" />
 
     <ImageView
         android:id="@+id/riflemanimage"
-        android:layout_width="369dp"
-        android:layout_height="495dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="140dp"
+        android:layout_width="136dp"
+        android:layout_height="166dp"
+        android:src="@drawable/riflesman"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.465"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.538" />
 
+    <ImageView
+        android:id="@+id/necroimage"
+        android:layout_width="136dp"
+        android:layout_height="166dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/necromancer"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.465"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.537" />
 
+    <ImageView
+        android:id="@+id/barbarianimage"
+        android:layout_width="136dp"
+        android:layout_height="166dp"
+        android:src="@drawable/barb"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.465"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.541" />
+
+    <ImageView
+        android:id="@+id/healerimage"
+        android:layout_width="136dp"
+        android:layout_height="166dp"
+        android:src="@drawable/healer"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.538" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/monsterbtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="100dp"
-        android:layout_marginBottom="24dp"
-        android:text="Button"
+        android:text="Monster"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/herobtn"
+        app:layout_constraintVertical_bias="0.131" />
+
+    <ImageView
+        android:id="@+id/assassinimage"
+        android:layout_width="136dp"
+        android:layout_height="166dp"
+        android:src="@drawable/assassin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.465"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.538" />
+
+    <TextView
+        android:id="@+id/welcometxt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose a character:"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcometxt"
+        app:layout_constraintVertical_bias="0.015" />
+
+    <EditText
+        android:id="@+id/inputlvl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="input level"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcometxt"
+        app:layout_constraintVertical_bias="0.721" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
